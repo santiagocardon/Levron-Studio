@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Diseño web profesional con entrega en 7 días. Webs rápidas, bonitas y que convierten visitas en clientes. Desde 300€.">
+
+    <link rel="icon" type="image/svg+xml" href="LEVRON.png">
+    <link rel="alternate icon" href="LEVRON.png">
+    <link rel="apple-touch-icon" href="LEVRON.png">
+
+    <title>LEVRON — Diseño web profesional. Entrega en 7 días.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-follower" aria-hidden="true"></div>
+
+    <div class="prism-bg" aria-hidden="true">
+        <div class="prism-light prism-light-1"></div>
+        <div class="prism-light prism-light-2"></div>
+        <div class="prism-light prism-light-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="LEVRON — Inicio">
+                <span class="logo-text">LEVRON</span>
+                <span class="logo-refraction" aria-hidden="true"></span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#proyectos" class="nav-link">PROYECTOS</a>
+                <a href="#proceso" class="nav-link">PROCESO</a>
+                <a href="#precios" class="nav-link">PRECIOS</a>
+                <a href="#contacto" class="nav-link">CONTACTO</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <a href="#contacto" class="btn-consult desktop-only">EMPEZAR AHORA</a>
+        </div>
+
+        <!-- FIX: mobile-menu movido dentro del nav pero FUERA del nav-container para no interferir con el layout -->
+        <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menú móvil" aria-modal="true">
+            <div class="mobile-menu-content">
+                <a href="#proyectos" class="mobile-link">PROYECTOS</a>
+                <a href="#proceso" class="mobile-link">PROCESO</a>
+                <a href="#precios" class="mobile-link">PRECIOS</a>
+                <a href="#contacto" class="mobile-link">CONTACTO</a>
+                <a href="#contacto" class="mobile-link-cta">EMPEZAR AHORA</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- [01] HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-label">
+                <span class="label-dot" aria-hidden="true"></span>
+                <span>DISEÑO ESTRATÉGICO • DESPLIEGUE EN 7 DÍAS HÁBILES</span>
+            </div>
+
+            <h1 class="hero-title" aria-label="LEVRON">
+                <span class="title-line">
+                    <span class="char" aria-hidden="true">L</span>
+                    <span class="char" aria-hidden="true">E</span>
+                    <span class="char" aria-hidden="true">V</span>
+                    <span class="char" aria-hidden="true">R</span>
+                    <span class="char" aria-hidden="true">O</span>
+                    <span class="char" aria-hidden="true">N</span>
+                </span>
+            </h1>
+
+            <div class="hero-tagline">
+                <p class="tagline-text">Diseño estratégico para negocios que quieren crecer.</p>
+            </div>
+
+            <div class="hero-description">
+                <p>Diseño web estratégico enfocado en conversión, rendimiento y posicionamiento. Ideal para negocios que no pueden permitirse perder clientes por una web mediocre.</p>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contacto" class="btn-primary">
+                    <span class="btn-text">IMPULSAR MI NEGOCIO</span>
+                    <span class="btn-shine" aria-hidden="true"></span>
+                </a>
+                <a href="#proyectos" class="btn-secondary">
+                    <span>EXPLORAR PORTAFOLIO</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-stats" aria-label="Estadísticas de rendimiento">
+            <div class="stat-card glass">
+                <div class="stat-value">&lt; 1s</div>
+                <div class="stat-label">Carga</div>
+                <div class="stat-sub">Tu cliente no espera</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value">100</div>
+                <div class="stat-label">PageSpeed</div>
+                <div class="stat-sub">Google te posiciona primero</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value">0KB</div>
+                <div class="stat-label">Bloat</div>
+                <div class="stat-sub">Sin código basura</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Banner -->
+    <div class="tech-banner" aria-hidden="true">
+        <div class="tech-scroll">
+            <div class="scroll-track">
+                <span>VANILLA JS</span><span class="dot">•</span>
+                <span>GSAP</span><span class="dot">•</span>
+                <span>CSS3</span><span class="dot">•</span>
+                <span>HTML5</span><span class="dot">•</span>
+                <span>WEB ANIMATIONS</span><span class="dot">•</span>
+                <span>SEO TÉCNICO</span><span class="dot">•</span>
+                <span>VANILLA JS</span><span class="dot">•</span>
+                <span>GSAP</span><span class="dot">•</span>
+                <span>CSS3</span><span class="dot">•</span>
+                <span>HTML5</span><span class="dot">•</span>
+                <span>WEB ANIMATIONS</span><span class="dot">•</span>
+                <span>SEO TÉCNICO</span><span class="dot">•</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- [02] PROYECTOS -->
+    <section class="spectrum" id="proyectos">
+        <div class="section-header">
+            <div class="section-number" aria-hidden="true">02</div>
+            <div class="section-info">
+                <div class="section-label">
+                    <span class="label-line" aria-hidden="true"></span>
+                    <span>PROYECTOS</span>
+                </div>
+                <h2 class="section-title">RESULTADOS<br>REALES</h2>
+                <p class="section-description">Cada proyecto es un negocio real con objetivos concretos. Aquí no hay demos bonitas — hay webs que trabajan para sus dueños cada día.</p>
+            </div>
+        </div>
+
+        <div class="spectrum-grid">
+            <article class="spectrum-item" data-project="1">
+                <div class="spectrum-visual">
+                    <div class="spectrum-overlay" aria-hidden="true"></div>
+                    <img src="eithan.png" alt="Eithan Smith — Entrenador Personal" loading="lazy" width="800" height="500">
+                    <a class="spectrum-hover" href="https://santiagocardon.github.io/Eithan-Smith/" target="_blank" rel="noopener noreferrer">
+                        <span class="hover-label">VER PROYECTO</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="spectrum-info">
+                    <div class="spectrum-meta">
+                        <span class="project-type">LANDING PAGE · RESERVAS ONLINE</span>
+                        <span class="project-year">2026</span>
+                    </div>
+                    <h3 class="spectrum-title">EITHAN SMITH</h3>
+                    <p class="spectrum-description">Landing de alta conversión para entrenador personal. Diseño orientado a captar clientes desde el primer scroll: sección hero impactante, galería de transformaciones reales, testimonios verificados y formulario de reserva directa sin fricciones.</p>
+                    <div class="spectrum-tech">
+                        <span class="tech-tag">VANILLA JS</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">FORMULARIOS</span>
+                    </div>
+                    <div class="spectrum-metrics glass">
+                        <div class="metric-item">
+                            <div class="metric-number">5 días</div>
+                            <div class="metric-text">Entrega</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric-item">
+                            <div class="metric-number">+40%</div>
+                            <div class="metric-text">Más reservas</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric-item">
+                            <div class="metric-number">100</div>
+                            <div class="metric-text">PageSpeed</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="spectrum-item" data-project="2">
+                <div class="spectrum-visual">
+                    <div class="spectrum-overlay" aria-hidden="true"></div>
+                    <img src="eclat.png" alt="Maison Éclat — Alta Joyería" loading="lazy" width="800" height="500">
+                    <a class="spectrum-hover" href="https://santiagocardon.github.io/maison-eclat/" target="_blank" rel="noopener noreferrer">
+                        <span class="hover-label">VER PROYECTO</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="spectrum-info">
+                    <div class="spectrum-meta">
+                        <span class="project-type">WEB DE LUJO · CITAS PRIVADAS</span>
+                        <span class="project-year">2025</span>
+                    </div>
+                    <h3 class="spectrum-title">MAISON ÉCLAT</h3>
+                    <p class="spectrum-description">Presencia digital de lujo para maison de alta joyería en Madrid. Catálogo de colecciones exclusivas con animaciones refinadas, sistema de reserva de cita privada en atelier y diseño que transmite la exclusividad de cada pieza.</p>
+                    <div class="spectrum-tech">
+                        <span class="tech-tag">VANILLA JS</span>
+                        <span class="tech-tag">GSAP</span>
+                        <span class="tech-tag">CSS ANIMATIONS</span>
+                    </div>
+                    <div class="spectrum-metrics glass">
+                        <div class="metric-item">
+                            <div class="metric-number">7 días</div>
+                            <div class="metric-text">Entrega</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric-item">
+                            <div class="metric-number">+35%</div>
+                            <div class="metric-text">Citas online</div>
+                        </div>
+                        <div class="metric-divider" aria-hidden="true"></div>
+                        <div class="metric-item">
+                            <div class="metric-number">100</div>
+                            <div class="metric-text">PageSpeed</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- [03] PROCESO -->
+    <section class="method" id="proceso">
+        <div class="section-header">
+            <div class="section-number" aria-hidden="true">03</div>
+            <div class="section-info">
+                <div class="section-label">
+                    <span class="label-line" aria-hidden="true"></span>
+                    <span>PROCESO</span>
+                </div>
+                <h2 class="section-title">Un proceso claro. Sin fricción. Sin sorpresas.</h2>
+                <p class="section-description">Un proceso simple y guiado para que tengas tu web online en 7 días, sin preocuparte por nada técnico.</p>
+            </div>
+        </div>
+
+        <div class="method-content">
+            <div class="method-philosophy glass">
+                <div class="philosophy-icon" aria-hidden="true">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <path d="M30 10L50 20L30 30L10 20L30 10Z" stroke="url(#prism-gradient)" stroke-width="2" fill="none"/>
+                        <path d="M30 30V50" stroke="url(#prism-gradient)" stroke-width="2"/>
+                        <path d="M10 20V40L30 50" stroke="url(#prism-gradient)" stroke-width="2" fill="none"/>
+                        <path d="M50 20V40L30 50" stroke="url(#prism-gradient)" stroke-width="2" fill="none"/>
+                        <defs>
+                            <linearGradient id="prism-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6366f1"/>
+                                <stop offset="50%" stop-color="#8b5cf6"/>
+                                <stop offset="100%" stop-color="#C0C0C0"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3>TÚ CÉNTRATE EN TU NEGOCIO.<br>YO ME ENCARGO DE TODO LO DEMÁS.</h3>
+                <p>Delegar tu web nunca fue tan sencillo. Tú aportas la visión; yo aporto la arquitectura técnica, el diseño de alta conversión y la infraestructura de hosting. Resultados profesionales sin curvas de aprendizaje</p>
+            </div>
+
+            <div class="method-grid">
+                <div class="method-step glass">
+                    <div class="step-num" aria-hidden="true">01</div>
+                    <h4 class="step-title">BRIEFING</h4>
+                    <p class="step-text">Analizamos tu negocio, tu cliente ideal y tus objetivos. Definimos estructura, mensaje y enfoque estratégico.</p>
+                </div>
+                <div class="method-step glass">
+                    <div class="step-num" aria-hidden="true">02</div>
+                    <h4 class="step-title">PROPUESTA</h4>
+                    <p class="step-text">Te presento el diseño completo con estructura, copy y enfoque estratégico. Ajustamos detalles hasta que todo esté alineado.</p>
+                </div>
+                <div class="method-step glass">
+                    <div class="step-num" aria-hidden="true">03</div>
+                    <h4 class="step-title">DESARROLLO</h4>
+                    <p class="step-text">Desarrollo tu web con código limpio y optimizado. Alta velocidad, estructura SEO y experiencia fluida en todos los dispositivos.</p>
+                </div>
+                <div class="method-step glass">
+                    <div class="step-num" aria-hidden="true">04</div>
+                    <h4 class="step-title">PUBLICACIÓN</h4>
+                    <p class="step-text">Publico tu web con dominio, hosting y configuración completa. Te entrego accesos y queda 100% bajo tu control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [04] PRECIOS -->
+    <section class="pricing" id="precios">
+        <div class="section-header">
+            <div class="section-number" aria-hidden="true">04</div>
+            <div class="section-info">
+                <div class="section-label">
+                    <span class="label-line" aria-hidden="true"></span>
+                    <span>PRECIOS</span>
+                </div>
+                <h2 class="section-title">ELIGE TU PLAN</h2>
+                <p class="section-description">Sabes exactamente qué incluye cada plan antes de empezar. Sin costes ocultos. Sin extras inesperados.</p>
+            </div>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card glass">
+                <div class="pricing-name">ESENCIAL</div>
+                <div class="pricing-subtitle">Para profesionales que necesitan presencia online ya</div>
+                <div class="pricing-price"><span>€</span>300</div>
+                <ul class="pricing-features">
+                    <li>Página profesional optimizada para conversión</li>
+                    <li>Formulario de contacto o botón WhatsApp</li>
+                    <li>Dominio profesional incluido (1 año)</li>
+                    <li>Diseño adaptado a móvil y tablet</li>
+                    <li>Carga en menos de 1 segundo</li>
+                    <li>Entrega garantizada en 5 días</li>
+                </ul>
+                <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar este plan</a>
+            </div>
+
+            <div class="pricing-card glass featured">
+                <div class="featured-badge">MÁS POPULAR</div>
+                <div class="pricing-name">Pro</div>
+                <div class="pricing-subtitle">Para negocios que quieren destacar y crecer online</div>
+                <div class="pricing-price"><span>€</span>500</div>
+                <ul class="pricing-features">
+                    <li>Hasta 5 secciones personalizadas</li>
+                    <li>Blog, galería de proyectos o portfolio</li>
+                    <li>SEO básico configurado desde el inicio</li>
+                    <li>Formulario de contacto + WhatsApp integrado</li>
+                    <li>Google Analytics incluido</li>
+                    <li>Dominio profesional incluido (1 año)</li>
+                    <li>Entrega garantizada en 7 días</li>
+                </ul>
+                <a href="#contacto" class="btn-pricing btn-pricing-filled">Solicitar este plan</a>
+            </div>
+
+            <div class="pricing-card glass">
+                <div class="pricing-name">Premium</div>
+                <div class="pricing-subtitle">Para negocios que quieren escalar y posicionarse como referencia.</div>
+                <div class="pricing-price"><span>€</span>750</div>
+                <ul class="pricing-features">
+                    <li>Tienda online (hasta 20 productos)</li>
+                    <li>Pasarela de pago integrada (Stripe / PayPal)</li>
+                    <li>Animaciones y micro-interacciones premium</li>
+                    <li>Google Analytics + Search Console</li>
+                    <li>SEO técnico avanzado</li>
+                    <li>Dominio profesional incluido (1 año)</li>
+                    <li>Entrega garantizada en 10 días</li>
+                </ul>
+                <a href="#contacto" class="btn-pricing btn-pricing-outline">Solicitar este plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [05] CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="section-header">
+            <div class="section-number" aria-hidden="true">05</div>
+            <div class="section-info">
+                <div class="section-label">
+                    <span class="label-line" aria-hidden="true"></span>
+                    <span>CONTACTO</span>
+                </div>
+                <h2 class="section-title">HABLEMOS<br>DE TU PROYECTO</h2>
+                <p class="section-description">Da el primer paso hacia una web que realmente venda. Analizaré tus necesidades y te enviaré una hoja de ruta personalizada en menos de 24 horas.</p>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form glass" novalidate></form>
+
+            <div class="contact-info">
+                <div class="info-card glass">
+                    <div class="info-text">
+                        <div class="info-label">EMAIL</div>
+                        <a href="mailto:studiolevron@gmail.com">studiolevron@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-text">
+                        <div class="info-label">TIEMPO DE RESPUESTA</div>
+                        <span>Compromiso 24h</span>
+                    </div>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-text">
+                        <div class="info-label">ENTREGA</div>
+                        <span>Lanzamiento rápido</span>
+                    </div>
+                </div>
+                <div class="info-card glass">
+                    <div class="info-text">
+                        <div class="info-label">WHATSAPP DIRECTO</div>
+                        <a href="https://wa.me/34633890456?text=Hola%2C%20me%20interesa%20una%20web%20con%20LEVRON" target="_blank" rel="noopener noreferrer">+34 633 890 456</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-text">LEVRON</span>
+                    <span class="logo-refraction" aria-hidden="true"></span>
+                </div>
+                <p class="footer-tagline">Donde el diseño estratégico se convierte en rentabilidad.</p>
+                <p class="footer-legal">© 2026 LEVRON STUDIO.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>NAVEGAR</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>CONECTAR</h4>
+                    <ul>
+                        <li><a href="https://wa.me/34633890456" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                        <li><a href="mailto:studiolevron@gmail.com">Email</a></li>
+                        <li><a href="https://www.instagram.com/levron.studio/" aria-label="Instagram">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@soysantiago.prism?is_from_webapp=1&sender_device=pc" aria-label="TikTok">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Ingeniería web de alto rendimiento: Código limpio, carga instantánea y diseño orientado a conversión.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init('Ikxj2Dg9jWK-s1NvW');</script>
+    <script src="script.js"></script>
+</body>
+</html>
